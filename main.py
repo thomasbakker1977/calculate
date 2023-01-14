@@ -19,4 +19,17 @@ avg_price = sum_one_each / 4
 
 print ("The average price is: " + str(avg_price))
 
+Num_Potatoes = 7
+Num_Broccoli = 5
+Num_Leeks =  2
+Num_Brussels_Sprout = 10
 
+# Sums the prices of every items * n items
+Sum_Total = (  Price_Potato * Num_Potatoes + Price_Broccoli * Num_Broccoli +  Price_Leek * Num_Leeks +  Price_Brussel_Sprout * Num_Broccoli) 
+print ("The total sum is: " + str(Sum_Total)) 
+
+
+# Total price of every item discounted by 30%
+Discount_Percentage = ( 30 /100 )
+Discounted_Sum_Total = (Sum_Total - Sum_Total * Discount_Percentage)
+print ("The total price discount with 30% discount: "  + str(Discounted_Sum_Total))
