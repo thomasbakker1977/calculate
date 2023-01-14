@@ -3,13 +3,13 @@ __winc_id__ = '499e67d5cb54448e93cee7465be2c866'
 __human_name__ = 'calculate'
 
 # Add your code after this line
-Price_Broccoli = 2 
-Price_Leek = 2
-Price_Potato = 3
-Price_Brussel_Sprout = 7
+broccoli = 2 
+leek = 2
+potato = 3
+brussel_sprout = 7
 
 # Calculate the total price
-sum_one_each = Price_Broccoli + Price_Leek + Price_Potato + Price_Brussel_Sprout
+sum_one_each = broccoli + leek + potato + brussel_sprout
 
 print ("The total sum is: " + str(sum_one_each)) # Combining string with integer (convert int to str)
 
@@ -19,17 +19,17 @@ avg_price = sum_one_each / 4
 
 print ("The average price is: " + str(avg_price))
 
-Num_Potatoes = 7
-Num_Broccoli = 5
-Num_Leeks =  2
-Num_Brussels_Sprout = 10
+num_potatoes = 7
+num_broccolis = 5
+num_leeks =  2
+num_brussels_sprouts = 10
 
 # Sums the prices of every items * n items
-Sum_Total = (  Price_Potato * Num_Potatoes + Price_Broccoli * Num_Broccoli +  Price_Leek * Num_Leeks +  Price_Brussel_Sprout * Num_Broccoli) 
-print ("The total sum is: " + str(Sum_Total)) 
+sum_total = (  potato * num_potatoes + broccoli * num_broccolis +  leek * num_leeks +  brussel_sprout * num_brussels_sprouts) 
+print ("The total sum is: " + str(sum_total)) 
 
 
 # Total price of every item discounted by 30%
-Discount_Percentage = ( 30 /100 )
-Discounted_Sum_Total = (Sum_Total - Sum_Total * Discount_Percentage)
-print ("The total price discount with 30% discount: "  + str(Discounted_Sum_Total))
+discount_percentage = ( 30 /100 )
+discounted_sum_total = (sum_total - sum_total * discount_percentage)
+print ("The total price discount with 30% discount: "  + str(discounted_sum_total))
