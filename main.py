@@ -37,4 +37,4 @@ discount = sum_total/100 * discount_percentage
 discounted_sum_total = (sum_total - discount)
 
 
-print ("The total discounted price :" + str(discounted_sum_total))
+print (discounted_sum_total)
