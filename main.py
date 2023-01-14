@@ -11,25 +11,30 @@ brussel_sprout = 7
 # Calculate the total price
 sum_one_each = broccoli + leek + potato + brussel_sprout
 
-print ("The total sum is: " + str(sum_one_each)) # Combining string with integer (convert int to str)
+#print ("The total sum is: " + str(sum_one_each)) # Combining string with integer (convert int to str)
 
 
 # Calculate the average price per item
 avg_price = sum_one_each / 4
 
-print ("The average price is: " + str(avg_price))
+#print ("The average price is: " + str(avg_price))
 
 num_potatoes = 7
 num_broccolis = 5
 num_leeks =  2
-num_brussels_sprouts = 10
+num_brussel_sprouts = 10
 
 # Sums the prices of every items * n items
-sum_total = (  potato * num_potatoes + broccoli * num_broccolis +  leek * num_leeks +  brussel_sprout * num_brussels_sprouts) 
-print ("The total sum is: " + str(sum_total)) 
+sum_total = (  potato * num_potatoes + broccoli * num_broccolis +  leek * num_leeks +  brussel_sprout * num_brussel_sprouts) 
+#print ("The total sum is: " + str(sum_total)) 
 
 
 # Total price of every item discounted by 30%
-discount_percentage = ( 30 /100 )
-discounted_sum_total = (sum_total - sum_total * discount_percentage)
-print ("The total price discount with 30% discount: "  + str(discounted_sum_total))
+discount_percentage = 30
+discount = sum_total/100 * discount_percentage
+#print ("The discount is : " + str(discount))
+
+discounted_sum_total = (sum_total - discount)
+
+
+print ("The total discounted price :" + str(discounted_sum_total))
